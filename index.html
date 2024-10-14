@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>componente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="logica.js"></script>
+</head>
+<body>
+
+    <div id="card">
+
+
+        <div id="planName">
+            <h5>Facturación Electrónica 24</h5>
+        </div>
+
+        <div id="price">
+            <h2>$00.000</h2>
+            <h6>/ mes</h6>
+        </div>
+
+        <div id="discount">
+            <p class="ahorro">Ahorra $1.000.000</p>
+            <p class="tag">-35%</p>
+            <p class="antes">Antes: <s>$1.500.000</s></p>
+        </div>
+
+        <p class="meses">Para los 4 meses restantes del plan actual</p>
+
+        <div id="btn">
+            <button id="btnBuy" onclick="comprar()">¡Comprar ahora!</button>
+            <p>*El pago que realices será por el valor total del año.</p>
+        </div>
+
+        <div id="features">
+            <img id="check" src="imagenes/icon.svg" alt="check">
+            <p>1 Usuario</p>
+            <div class="tooltip">
+                <img src="imagenes/tooltip.svg" alt="tooltip">
+                <span class="tooltiptext">Controla el ingreso de tu personal al sistema con la asignación de un usuario definiendo rol y permisos.</span>
+            </div>
+        </div>
+        <div id="features">
+            <img id="check" src="imagenes/icon.svg" alt="check">
+            <p>Cobra con Mercado Pago</p>
+            <div class="tooltip">
+                <img src="imagenes/tooltip.svg" alt="tooltip">
+                <span class="tooltiptext">Podrás generar factura electrónica de venta, documento soporte en compras y eventos asociados a la recepción de facturas. Cumpliendo con todos los requisitos exigidos por la DIAN.</span>
+            </div>
+        </div>
+        <div id="features">
+            <img id="check" src="imagenes/icon.svg" alt="check">
+            <p>5 Documentos electrónicos</p>
+            <div class="tooltip">
+                <img src="imagenes/tooltip.svg" alt="tooltip">
+                <span class="tooltiptext">¡Lleva tu empresa a todas partes! Agiliza procesos, impulsa tus ventas, cobra de manera oportuna y toma las mejores decisiones con nuestra App Móvil.</span>
+            </div>
+        </div>
+
+        <button id="btnDown" onclick="contacto()">Contacta a un asesor</button>
+
+
+    </div>
+
+
+
+
+
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #37465A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 334px;
+    border: 1px solid #EEEEEE;
+    padding: 30px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+#card:hover{
+    border: 1px solid #009DFF;
+    box-shadow: 2px 2px 10px rgba(209, 209, 209, 0.5);
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+h6{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+#price, #features{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 18px 0 5px 0;
+}
+
+#discount{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 18px 0 15px 0;
+}
+
+.ahorro{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+}
+
+.tag{
+    background-color: #FFA532;
+    padding: 1px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.antes{
+    font-weight: 300;
+    color: #A4A4A4;
+}
+
+.meses{
+    font-size: 16px;  
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-weight: 300;
+}
+
+
+
+#btn{
+    width: 100%;
+}
+#btnBuy{
+    background-color: #7AC23A;
+    color: white;
+    font-weight: 700;
+    padding: 12px 0;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+#btnBuy:hover{
+    background-color: #A2D675;
+}
+#btn p{
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#features{
+    width: 100%;
+}
+#features p{
+    width: 100%;
+}
+#check{
+    margin-right: 15px;
+}
+
+#btnDown{
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid #D8D8D8;
+    color: #009DFF;
+    padding: 12px 0;
+    width: 100%;
+    font-weight: 700;
+    cursor: pointer;
+}
+#btnDown:hover{
+    background-color: #EBF7FF;
+}
+
+
+
+
+
+
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+ /* Texto del tooltip */
+.tooltip .tooltiptext {
+    font-size: 14px;
+    font-weight: 600;
+    visibility: hidden;
+    width: 200px;
+    background-color: #37465A;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 145%; /* Posición sobre el elemento */
+    left: -100%;
+    margin-left: -70px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+ /* Flecha del tooltip */
+.tooltip .tooltiptext::after {
+    content: '';
+    position: absolute;
+    top: 100%; /* En la parte inferior del tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #37465A transparent transparent transparent;
+}
+
+/* Mostrar el tooltip al pasar el ratón por encima */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
