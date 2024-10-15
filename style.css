@@ -106,6 +106,7 @@ h6{
     border-radius: 6px;
     margin-bottom: 15px;
     cursor: pointer;
+    font-size: 18px;
 }
 #btnBuy:hover{
     background-color: #A2D675;
@@ -137,6 +138,7 @@ h6{
     width: 100%;
     font-weight: 700;
     cursor: pointer;
+    font-size: 18px;
 }
 #btnDown:hover{
     background-color: #EBF7FF;
