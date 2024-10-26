@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/css/all.min.css">
 
-    <script src="logica.js"></script>
+    
 </head>
 <body>
     
@@ -50,9 +50,19 @@
             </ul>
             <ul id="menuTexto" class="right">
                 <li>Contáctanos</li>
-                <div id="desplegable2">
-                    <li id="opcionDesplegable">Iniciar sesión</li>
+                <div id="desplegable2" class="login">
+                    <li id="opcionDesplegable"><a class="btnLogin" href="">Iniciar sesión</a></li>
                     <i class="fa-solid fa-chevron-down"></i>
+                    <div class="loginDesplegable inactive">
+                        <ul id="menuLogin">
+                            <li id="loginItem"><a class="item" href="">Siigo Nube, Contador, Facturación</a></li>
+                            <li id="loginItem"><a class="item" href="">Sistema POS</a></li>
+                            <li id="loginItem"><a class="item" href="">Divulgación Académica</a></li>
+                            <li id="loginItem"><a class="item" href="https://www.siigo.com/contactenos/">Siigo App</a></li>
+                            <li id="loginItem"><a class="item" href="https://siigonube.siigo.com/?redirectTo=shop#/login">Tienda Siigo</a></li>
+                        </ul>
+                    </div>
+                
                 </div>
             </ul>
 
@@ -124,7 +134,10 @@
 
 
 
-    
+    <script src="logica.js"></script>
+
 
 </body>
+
+
 </html>
