@@ -5,13 +5,15 @@
 }
 
 
-body{
+html, body{
     font-family: 'Nunito Sans', sans-serif;
     color: #37465A;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    width: 100%; /* Asegura que no tenga scroll horizontal */
 }
 
 #card{
@@ -20,6 +22,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100%; /* Se ajusta al ancho del contenedor */
     width: 334px;
     border: 1px solid #EEEEEE;
     padding: 30px 15px;
@@ -279,6 +282,13 @@ i{
     color: #37465A;
     font-size: 14px;
 }
+#iconTelefono{
+    padding-right: 5px;
+    color: white;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
 
 
 .left {
@@ -329,4 +339,58 @@ i{
 #flag{
     margin-right: 5px;
 }
+
+
+
+.menuMobile{
+    display: none;
+}
+
+
+
+
+
+@media(max-width: 1060px){
+    #menuTexto{
+        display: none;
+    }
+
+    .menuMobile{
+        display: block;
+    }
+}
+
+
+@media(max-width: 570px){
+    #desplegable3, #linea2{
+        display: none;
+    }
+
+    #header, #topBar {
+        padding: 10px;
+    }
+    ul {
+        flex-wrap: wrap; /* Asegura que los elementos no desborden */
+    }
+}
+
+@media(max-width: 375px){
+    #textoTopBar, #linea3{
+        display: none; 
+    }
+    #iconTelefono{
+        display: block;
+        margin-top: 3px;
+    }
+
+    body{
+        width: 100%;
+        min-width: 324px;
+    }
+    #card {
+        width: auto; /* Ajusta el card al contenido */
+        max-width: 100%; /* Evita desbordamientos */
+    }
+}
+
 
