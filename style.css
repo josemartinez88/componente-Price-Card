@@ -197,3 +197,136 @@ h6{
   }
 
 
+
+
+
+
+
+
+
+
+
+#navegador{
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between; /* para que me separe el header la info de la derecha con la info de la izq */
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 20px 60px;
+    border-bottom: 1px solid #EEEEEE;
+}
+a{
+    text-decoration: none;
+    color:#37465A;
+}
+#itemSelected{
+    font-weight: 700;
+    color: #009DFF;
+    margin-bottom: 5px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 14px;
+}
+ul li{
+   margin-right: 30px; 
+}
+#logoImagen{
+    margin-right: 60px;
+}
+
+.linea{
+    width: 34px;
+    height: 3px; /* El grosor de la línea */
+    border: none; /* Para quitar el borde por defecto */
+    background-color:#009DFF; /* Color de la línea */
+    margin-top: 5px;
+}
+#desplegable{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 30px; 
+}
+#desplegable2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+#desplegable3{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: center;
+    margin-right: 15px; 
+}
+#opcionDesplegable{
+    margin-right: 5px;
+}
+#opcionDesplegable2{
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: 700;
+}
+i{
+    color: #37465A;
+    font-size: 14px;
+}
+
+
+.left {
+    margin-right: auto; /* Alinea a la izquierda */
+}
+
+.right {
+    display: flex;
+    margin-bottom: 5px;
+    margin-left: auto; /* Alinea a la derecha */
+    
+}
+
+#topBar{
+    background-color: #009DFF;
+    height: 42px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding-right: 60px;
+}
+
+#textoTopBar{
+    font-size: 12px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+#textoTopBar2{
+    font-size: 12px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+#iconTopBar{
+    color: white;
+}
+.linea2{
+    margin-right: 15px;
+    border: none;
+    background-color: white;
+    width: 1px;
+}
+#flag{
+    margin-right: 5px;
+}
+
