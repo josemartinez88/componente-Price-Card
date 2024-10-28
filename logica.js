@@ -69,6 +69,12 @@ function esconderMenuProductos(){
 function mostrarMenuMobile(){
     menuDesplegableMobile.classList.remove("inactive");
     overflow.classList.remove("inactive");
+    menuMobile.onclick = function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Esto hace que el desplazamiento sea suave
+        });
+    };
     bloquearScroll();
 }
 function esconderMenuMobile(){
