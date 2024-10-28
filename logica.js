@@ -28,7 +28,7 @@ cerrar.addEventListener("click", esconderMenuMobile);
 
 
 
-// Bloquear el scroll
+/* // Bloquear el scroll
 function bloquearScroll() {
     window.addEventListener('wheel', prevenirScroll, { passive: false });
     window.addEventListener('touchmove', prevenirScroll, { passive: false });
@@ -43,7 +43,7 @@ function desbloquearScroll() {
     window.removeEventListener('wheel', prevenirScroll);
     window.removeEventListener('touchmove', prevenirScroll);
 }
-
+ */
 
 
 
@@ -70,13 +70,13 @@ function esconderMenuProductos(){
 function mostrarMenuMobile(){
     menuDesplegableMobile.classList.remove("inactive");
     overflow.classList.remove("inactive");
-    menuMobile.onclick = function() {
+/*     menuMobile.onclick = function() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth' // Esto hace que el desplazamiento sea suave
         });
     };
-    bloquearScroll();
+    bloquearScroll(); */
 }
 function esconderMenuMobile(){
     menuDesplegableMobile.classList.add("inactive");
