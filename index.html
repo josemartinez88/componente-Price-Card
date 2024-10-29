@@ -240,7 +240,7 @@
                     <p id="descripcionHeroBanner">Administra tu empresa desde cualquier lugar y mantén la contabilidad al día.
                         Toma las mejores decisiones con los reportes inteligentes. Incluye facturación electrónica y nómina electrónica. </p>
                 </div>
-                <button id="btnHeroBanner">Conoce más</button>
+                <button id="buttonPrimary">Conoce más</button>
             </div>
 
 
@@ -283,61 +283,226 @@
 
 
     
-    <div>
-        <div id="card">
-            <div id="planName">
-                <h5>Facturación Electrónica 24</h5>
+    <section id="sectionPriceCards">
+        <div id="PriceCards">
+            <div id="cardIzquierda">
+                <div id="planName">
+                    <h5>Facturación Electrónica 24</h5>
+                </div>
+                <div id="price">
+                    <h2>$8.325</h2>
+                    <h6>/ mes</h6>
+                </div>
+                <div id="discount">
+                    <p class="ahorro">Ahorra $1.000.000</p>
+                    <p class="tag">-35%</p>
+                    <p class="antes">Antes: <s>$1.500.000</s></p>
+                </div>
+                <p class="meses">Para los 4 meses restantes del plan actual</p>
+                <div id="btn">
+                    <button id="btnBuy" onclick="comprar()">¡Comprar ahora!</button>
+                    <p>*El pago que realices será por el valor total del año.</p>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/icon.svg" alt="check">
+                    <p>1 Usuario</p>
+                    <div class="tooltip">
+                        <img src="imagenes/tooltip.svg" alt="tooltip">
+                        <span class="tooltiptext">Controla el ingreso de tu personal al sistema con la asignación de un usuario definiendo rol y permisos.</span>
+                    </div>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/icon.svg" alt="check">
+                    <p>Cobra con Mercado Pago</p>
+                    <div class="tooltip">
+                        <img src="imagenes/tooltip.svg" alt="tooltip">
+                        <span class="tooltiptext">Podrás generar factura electrónica de venta, documento soporte en compras y eventos asociados a la recepción de facturas. Cumpliendo con todos los requisitos exigidos por la DIAN.</span>
+                    </div>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/icon.svg" alt="check">
+                    <p>5 Documentos electrónicos</p>
+                    <div class="tooltip">
+                        <img src="imagenes/tooltip.svg" alt="tooltip">
+                        <span class="tooltiptext">¡Lleva tu empresa a todas partes! Agiliza procesos, impulsa tus ventas, cobra de manera oportuna y toma las mejores decisiones con nuestra App Móvil.</span>
+                    </div>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/icon.svg" alt="check">
+                    <p>Siigo App</p>
+                    <div class="tooltip">
+                        <img src="imagenes/tooltip.svg" alt="tooltip">
+                        <span class="tooltiptext">¡Lleva tu empresa a todas partes! Agiliza procesos, impulsa tus ventas, cobra de manera oportuna y toma las mejores decisiones con nuestra App Móvil.</span>
+                    </div>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/iconDesabled.svg" alt="check">
+                    <p id="funcionalidadDesabled">Cotizaciones/CRM</p>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/iconDesabled.svg" alt="check">
+                    <p id="funcionalidadDesabled">Cartera seguimiento de cobranza</p>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/iconDesabled.svg" alt="check">
+                    <p id="funcionalidadDesabled">Gastos/cuentas por pagar</p>
+                </div>
+                <button id="btnDown" onclick="contacto()">Contacta a un asesor</button>
             </div>
-            <div id="price">
-                <h2>$00.000</h2>
-                <h6>/ mes</h6>
-            </div>
-            <div id="discount">
-                <p class="ahorro">Ahorra $1.000.000</p>
-                <p class="tag">-35%</p>
-                <p class="antes">Antes: <s>$1.500.000</s></p>
-            </div>
-            <p class="meses">Para los 4 meses restantes del plan actual</p>
-            <div id="btn">
-                <button id="btnBuy" onclick="comprar()">¡Comprar ahora!</button>
-                <p>*El pago que realices será por el valor total del año.</p>
-            </div>
-            <div id="features">
-                <img id="check" src="imagenes/icon.svg" alt="check">
-                <p>1 Usuario</p>
-                <div class="tooltip">
-                    <img src="imagenes/tooltip.svg" alt="tooltip">
-                    <span class="tooltiptext">Controla el ingreso de tu personal al sistema con la asignación de un usuario definiendo rol y permisos.</span>
+
+            <div id="priceCardPopular">
+                <div id="etiquetaPopular">
+                    <p>Más popular</p>
+                </div>
+                <div id="cardPopular">
+        
+                    <div id="planName">
+                        <h5>Facturación Electrónica 120</h5>
+                    </div>
+                    <div id="price">
+                        <h2>$8.325</h2>
+                        <h6>/ mes</h6>
+                    </div>
+                    <div id="discount">
+                        <p class="ahorro">Ahorra $1.000.000</p>
+                        <p class="tag">-35%</p>
+                        <p class="antes">Antes: <s>$1.500.000</s></p>
+                    </div>
+                    <p class="meses">Para los 4 meses restantes del plan actual</p>
+                    <div id="btn">
+                        <button id="btnBuy" onclick="comprar()">¡Comprar ahora!</button>
+                        <p>*El pago que realices será por el valor total del año.</p>
+                    </div>
+                    <div id="features">
+                        <img id="check" src="imagenes/icon.svg" alt="check">
+                        <p>1 Usuario</p>
+                        <div class="tooltip">
+                            <img src="imagenes/tooltip.svg" alt="tooltip">
+                            <span class="tooltiptext">Controla el ingreso de tu personal al sistema con la asignación de un usuario definiendo rol y permisos.</span>
+                        </div>
+                    </div>
+                    <div id="features">
+                        <img id="check" src="imagenes/icon.svg" alt="check">
+                        <p>Cobra con Mercado Pago</p>
+                        <div class="tooltip">
+                            <img src="imagenes/tooltip.svg" alt="tooltip">
+                            <span class="tooltiptext">Podrás generar factura electrónica de venta, documento soporte en compras y eventos asociados a la recepción de facturas. Cumpliendo con todos los requisitos exigidos por la DIAN.</span>
+                        </div>
+                    </div>
+                    <div id="features">
+                        <img id="check" src="imagenes/icon.svg" alt="check">
+                        <p>5 Documentos electrónicos</p>
+                        <div class="tooltip">
+                            <img src="imagenes/tooltip.svg" alt="tooltip">
+                            <span class="tooltiptext">¡Lleva tu empresa a todas partes! Agiliza procesos, impulsa tus ventas, cobra de manera oportuna y toma las mejores decisiones con nuestra App Móvil.</span>
+                        </div>
+                    </div>
+                    <div id="features">
+                        <img id="check" src="imagenes/icon.svg" alt="check">
+                        <p>Siigo App</p>
+                        <div class="tooltip">
+                            <img src="imagenes/tooltip.svg" alt="tooltip">
+                            <span class="tooltiptext">¡Lleva tu empresa a todas partes! Agiliza procesos, impulsa tus ventas, cobra de manera oportuna y toma las mejores decisiones con nuestra App Móvil.</span>
+                        </div>
+                    </div>
+                    <div id="features">
+                        <img id="check" src="imagenes/iconDesabled.svg" alt="check">
+                        <p id="funcionalidadDesabled">Cotizaciones/CRM</p>
+                    </div>
+                    <div id="features">
+                        <img id="check" src="imagenes/iconDesabled.svg" alt="check">
+                        <p id="funcionalidadDesabled">Cartera seguimiento de cobranza</p>
+                    </div>
+                    <div id="features">
+                        <img id="check" src="imagenes/iconDesabled.svg" alt="check">
+                        <p id="funcionalidadDesabled">Gastos/cuentas por pagar</p>
+                    </div>
+                    <button id="btnDown" onclick="contacto()">Contacta a un asesor</button>
                 </div>
             </div>
-            <div id="features">
-                <img id="check" src="imagenes/icon.svg" alt="check">
-                <p>Cobra con Mercado Pago</p>
-                <div class="tooltip">
-                    <img src="imagenes/tooltip.svg" alt="tooltip">
-                    <span class="tooltiptext">Podrás generar factura electrónica de venta, documento soporte en compras y eventos asociados a la recepción de facturas. Cumpliendo con todos los requisitos exigidos por la DIAN.</span>
+
+            <div id="cardDerecha">
+                <div id="planName">
+                    <h5>Sistema POS</h5>
                 </div>
-            </div>
-            <div id="features">
-                <img id="check" src="imagenes/icon.svg" alt="check">
-                <p>5 Documentos electrónicos</p>
-                <div class="tooltip">
-                    <img src="imagenes/tooltip.svg" alt="tooltip">
-                    <span class="tooltiptext">¡Lleva tu empresa a todas partes! Agiliza procesos, impulsa tus ventas, cobra de manera oportuna y toma las mejores decisiones con nuestra App Móvil.</span>
+                <div id="price">
+                    <h2>$8.325</h2>
+                    <h6>/ mes</h6>
                 </div>
+                <div id="discount">
+                    <p class="ahorro">Ahorra $1.000.000</p>
+                    <p class="tag">-35%</p>
+                    <p class="antes">Antes: <s>$1.500.000</s></p>
+                </div>
+                <p class="meses">Para los 4 meses restantes del plan actual</p>
+                <div id="btn">
+                    <button id="btnBuy" onclick="comprar()">¡Comprar ahora!</button>
+                    <p>*El pago que realices será por el valor total del año.</p>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/icon.svg" alt="check">
+                    <p>1 Usuario</p>
+                    <div class="tooltip">
+                        <img src="imagenes/tooltip.svg" alt="tooltip">
+                        <span class="tooltiptext">Controla el ingreso de tu personal al sistema con la asignación de un usuario definiendo rol y permisos.</span>
+                    </div>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/icon.svg" alt="check">
+                    <p>Cobra con Mercado Pago</p>
+                    <div class="tooltip">
+                        <img src="imagenes/tooltip.svg" alt="tooltip">
+                        <span class="tooltiptext">Podrás generar factura electrónica de venta, documento soporte en compras y eventos asociados a la recepción de facturas. Cumpliendo con todos los requisitos exigidos por la DIAN.</span>
+                    </div>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/icon.svg" alt="check">
+                    <p>5 Documentos electrónicos</p>
+                    <div class="tooltip">
+                        <img src="imagenes/tooltip.svg" alt="tooltip">
+                        <span class="tooltiptext">¡Lleva tu empresa a todas partes! Agiliza procesos, impulsa tus ventas, cobra de manera oportuna y toma las mejores decisiones con nuestra App Móvil.</span>
+                    </div>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/icon.svg" alt="check">
+                    <p>Siigo App</p>
+                    <div class="tooltip">
+                        <img src="imagenes/tooltip.svg" alt="tooltip">
+                        <span class="tooltiptext">¡Lleva tu empresa a todas partes! Agiliza procesos, impulsa tus ventas, cobra de manera oportuna y toma las mejores decisiones con nuestra App Móvil.</span>
+                    </div>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/iconDesabled.svg" alt="check">
+                    <p id="funcionalidadDesabled">Cotizaciones/CRM</p>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/iconDesabled.svg" alt="check">
+                    <p id="funcionalidadDesabled">Cartera seguimiento de cobranza</p>
+                </div>
+                <div id="features">
+                    <img id="check" src="imagenes/iconDesabled.svg" alt="check">
+                    <p id="funcionalidadDesabled">Gastos/cuentas por pagar</p>
+                </div>
+                <button id="btnDown" onclick="contacto()">Contacta a un asesor</button>
             </div>
-            <button id="btnDown" onclick="contacto()">Contacta a un asesor</button>
-    </div>
+        </div>
 
 
-    </div>
+        <div id="descriptionButton">
+            <p class="descriptionText">¡Tenemos los planes que se ajustan a las necesidades de tu Pyme!</p>
+            <button id="buttonPrimary">Ver todos los planes de Siigo</button>
+        </div>
+        
+    </section>
+    
+    
 
 
 
 
 
 
-
+    <h1>holas asgsdfg sdgdsf</h1>
 
 
 

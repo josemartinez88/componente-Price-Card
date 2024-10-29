@@ -16,8 +16,26 @@ html, body{
     width: 100%; /* Asegura que no tenga scroll horizontal */
 }
 
-#card{
-    margin: 30px 0;
+#sectionPriceCards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px 15px;
+    margin-bottom: 60px;
+    background-color: #F3F7F9;
+    width: 100%;
+}
+#PriceCards{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+#cardIzquierda{
+    margin: 35px 30px 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,13 +45,84 @@ html, body{
     border: 1px solid #EEEEEE;
     padding: 30px 15px;
     border-radius: 6px;
-    cursor: pointer;
     transition: box-shadow 0.3s;
+    background-color: white;
 }
-#card:hover{
+#cardDerecha{
+    margin: 35px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Se ajusta al ancho del contenedor */
+    width: 334px;
+    border: 1px solid #EEEEEE;
+    padding: 30px 15px;
+    border-radius: 6px;
+    transition: box-shadow 0.3s;
+    background-color: white;
+}
+#cardPopular{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; /* Se ajusta al ancho del contenedor */
+    width: 334px;
+    border: 2px solid #009DFF;
+    padding: 30px 15px;
+    border-radius: 0 0 6px 6px;
+    transition: box-shadow 0.3s;
+    background-color: white;
+}
+#etiquetaPopular{
+    width: 100%;
+    background-color: #009DFF;
+    text-align: center;
+    color: white;
+    border-radius: 6px 6px 0 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 700; 
+}
+
+#cardIzquierda:hover, #cardDerecha:hover{
     border: 1px solid #009DFF;
     box-shadow: 2px 2px 10px rgba(209, 209, 209, 0.5);
 }
+#cardPopular:hover{
+    border: 2px solid #009DFF;
+    box-shadow: 2px 2px 10px rgba(209, 209, 209, 5);
+}
+
+#descriptionButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.descriptionText{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+#buttonPrimary{
+    background-color: #009DFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#buttonPrimary:hover, #btnFormHero:hover{
+    background-color: #4DBAFF;
+}
+
 
 h1{
     font-size: 36px;
@@ -63,6 +152,9 @@ h6{
     flex-direction: row;
     align-items: center;
     margin: 18px 0 5px 0;
+}
+#funcionalidadDesabled{
+    color: #A4A4A4;
 }
 
 #discount{
@@ -654,8 +746,9 @@ h6{
 #btnHeroBanner{
     background-color: #009DFF;
     color: white;
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     padding: 10px 15px;
     border-radius: 6px;
     border: none;
@@ -692,9 +785,21 @@ input, select{
 }
 select{
     cursor: pointer;
+    appearance: none; /* Ocultar flecha del select*/
+    -webkit-appearance: none; /* Safari */
+    -moz-appearance: none; /* Firefox */
+    background-image: url("imagenes/arrowSelect.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px; /* Tamaño del icono */
+    padding-right: 10px;
 }
+
 input::placeholder{
     color: #A4A4A4;
+}
+input:hover, select:hover{
+    background-color: #EBF7FF;
 }
 select:not(.placeholder) {
     color: #A4A4A4;
@@ -704,6 +809,9 @@ select:not(.placeholder) {
     font-weight: 400;
 }
 #btnFormHero{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
     background-color: #009DFF;
     padding: 10px 0;
     width: 100%;
@@ -711,6 +819,7 @@ select:not(.placeholder) {
     border: none;
     border-radius: 6px;
     margin-top: 15px;
+    cursor: pointer;
 }
 
 
@@ -758,6 +867,16 @@ select:not(.placeholder) {
     #formHeroBanner{
         height: 450px;
     }
+
+    #cardIzquierda{
+        margin: 35px 15px;
+    }
+    #priceCardPopular{
+        margin-bottom: 30px;
+    }
+    #cardDerecha{
+        margin: 0 15px;
+    }
 }
 
 
@@ -796,6 +915,10 @@ select:not(.placeholder) {
     #formHeroBanner{
         width: 100%;
         height: 396px;
+    }
+
+    #cardIzquierda{
+        margin: 0 0 30px 0;
     }
 }
 
@@ -844,6 +967,10 @@ select:not(.placeholder) {
         height: auto;
     }
 
+
+    #buttonPrimary, #btnHeroBanner{
+        width: 100%;
+    }
 
 }
 
