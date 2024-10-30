@@ -96,6 +96,41 @@ html, body{
     box-shadow: 2px 2px 10px rgba(209, 209, 209, 5);
 }
 
+.nav-btn {
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: #009DFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 33px;
+    height: 36px;
+    width: 36px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .leftCarrusel {
+    display: flex;
+    justify-content: center;
+    left: 10px;
+  }
+  
+  .rightCarrusel {
+    display: flex;
+    justify-content: center;
+    right: 10px;
+  }
+
+
+
+
+
+
+
+
+
 #descriptionButton{
     display: flex;
     flex-direction: column;
@@ -208,6 +243,7 @@ h6{
     margin-bottom: 15px;
     cursor: pointer;
     font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 #btnBuy:hover{
     background-color: #A2D675;
@@ -240,6 +276,7 @@ h6{
     font-weight: 700;
     cursor: pointer;
     font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 #btnDown:hover{
     background-color: #EBF7FF;
@@ -968,6 +1005,32 @@ select:not(.placeholder) {
     }
 
 
+
+
+    #PriceCards{
+        width: 100%;
+        margin: 60px 0 0 0;
+    }
+
+    #sectionPriceCards{
+        padding: 0;
+        width: 100%;
+    }
+    #cardDerecha{
+        margin: 0;
+    }
+    #descriptionButton{
+        margin: 0 15px 60px 15px;
+    }
+    #planName{
+        text-align: center;
+    }
+
+
+
+
+
+
     #buttonPrimary, #btnHeroBanner{
         width: 100%;
     }
@@ -975,3 +1038,19 @@ select:not(.placeholder) {
 }
 
 
+
+
+
+@media(max-width: 320px){
+    #PriceCards{
+        width: 100%;
+    }
+    #sectionPriceCards{
+        width: 100%;
+    }
+
+    #PriceCards, #cardIzquierda, #priceCardPopular, #cardDerecha{
+        width: 95%;
+    }
+    
+}
