@@ -33,6 +33,7 @@ html, body{
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap; 
+    margin-top: 30px;
 }
 #cardIzquierda{
     margin: 35px 30px 0 0;
@@ -95,42 +96,6 @@ html, body{
     border: 2px solid #009DFF;
     box-shadow: 2px 2px 10px rgba(209, 209, 209, 5);
 }
-
-.nav-btn {
-    position: absolute;
-    top: 100%;
-    transform: translateY(-50%);
-    background-color: white;
-    color: #009DFF;
-    border: 1px solid #D8D8D8;
-    border-radius: 33px;
-    height: 36px;
-    width: 36px;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-  }
-  
-  .leftCarrusel {
-    display: flex;
-    justify-content: center;
-    left: 10px;
-  }
-  
-  .rightCarrusel {
-    display: flex;
-    justify-content: center;
-    right: 10px;
-  }
-
-
-
-
-
-
-
-
-
 #descriptionButton{
     display: flex;
     flex-direction: column;
@@ -157,6 +122,25 @@ html, body{
 #buttonPrimary:hover, #btnFormHero:hover{
     background-color: #4DBAFF;
 }
+#buttonTertiary{
+    background-color: white;
+    color: #009DFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Nunito Sans', sans-serif;
+    cursor: pointer;
+}
+#buttonTertiary:hover{
+    background-color: #EBF7FF;
+}
+.buttonSizeM{
+    font-size: 14px;
+    font-weight: 700;
+}
+.fa-arrow-right-long{
+    margin-left: 5px;
+}
 
 
 h1{
@@ -164,24 +148,26 @@ h1{
     font-weight: 900;
     line-height: normal;
 }
-
+h2{
+    font-size: 32px;
+    font-weight: 900;
+}
+h4{
+    font-size: 24px;
+    font-weight: 800;
+}
 h5 {
     font-size: 20px;
     font-weight: 800;
 }
-
-h2{
-    font-size: 32px;
-    font-weight: 900;
-    margin-right: 5px;
-}
-
 h6{
     font-size: 18px;
     font-weight: 800;
 }
 
-
+.textPrice{
+    margin-right: 5px;
+}
 #price, #features{
     display: flex;
     flex-direction: row;
@@ -750,6 +736,8 @@ h6{
 
 
 #heroBanner{
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 507px;
     padding-top: 45px;
@@ -763,6 +751,7 @@ h6{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 1268px;
 }
 #heroBannerIzquierda{
     width: 45%;
@@ -863,6 +852,64 @@ select:not(.placeholder) {
 
 
 
+/* SERVICIOS CARD */
+#serviciosSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tituloSeccion{
+    max-width: 808px;
+    text-align: center;
+}
+#rowServiciosCard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 30px 60px 30px;
+    gap: 30px;
+    width: 100%;
+    max-width: 1268px;
+}
+#serviciosCard{
+    background-color: white;
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+    padding: 30px 30px 45px 30px;
+    width: 394px;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+}
+#contentServiciosCard{
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+#tituloServiciosCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.iconServiciosCard{
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -888,23 +935,44 @@ select:not(.placeholder) {
     #heroBannerIzquierda{
         margin-right: 30px;
     }
+
+    #formHeroBanner{
+        height: 100%;
+    }
+
+    #PriceCards{
+        margin-top: 30px;
+    }
 }
 
 
 
+
+
+
+
 @media(max-width: 768px){
+    .tituloSeccion{
+        font-size: 28px;
+    }
     #heroBanner{
         width: 100%;
         height: 100%;
         padding-bottom: 45px;
     }
+    #contenedorHero{
+        width: 100%;
+    }
     #heroBannerIzquierda{
         margin-right: 30px;
     }
     #formHeroBanner{
-        height: 450px;
+        height: 455px;
     }
 
+    #PriceCards{
+        margin-top: 30px;
+    }
     #cardIzquierda{
         margin: 35px 15px;
     }
@@ -913,6 +981,14 @@ select:not(.placeholder) {
     }
     #cardDerecha{
         margin: 0 15px;
+    }
+   
+
+    #serviciosCard{
+        flex: 1 1 calc(50% - 20px); /* 50% del ancho menos el margen */
+        box-sizing: border-box; /* Asegura que el padding y el margen se incluyan en el ancho total */
+        margin: 0 30px;
+        width: 100%;
     }
 }
 
@@ -923,6 +999,9 @@ select:not(.placeholder) {
 
 
 @media(max-width: 570px){
+    .tituloSeccion{
+        font-size: 24px;
+    }
     #desplegable3, #linea2{
         display: none;
     }
@@ -957,8 +1036,49 @@ select:not(.placeholder) {
     #cardIzquierda{
         margin: 0 0 30px 0;
     }
+
+    #serviciosCard{
+        margin: 0 15px;
+    }
+
+
+    .tituloSeccion{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
+
+
+@media(max-width: 653px){
+    .tituloSeccion{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #heroBanner{
+        width: 100%;
+        height: 100%;
+        background-image: url('imagenes/heroBannerMobile.jpg');
+        background-size: cover;
+        padding: 30px 15px;
+    }
+    #contenedorHero{
+        display: flex;
+        flex-direction: column;
+    }
+    #heroBannerIzquierda{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #formHeroBanner{
+        width: 100%;
+        height: auto;
+    }
+
+    #cardIzquierda{
+        margin-top: 0;
+    }
+}
 
 
 
@@ -1009,15 +1129,20 @@ select:not(.placeholder) {
 
     #PriceCards{
         width: 100%;
+        margin: 30px 0 0 0;
+    }
+    .primerTitulo{
         margin: 60px 0 0 0;
     }
-
     #sectionPriceCards{
         padding: 0;
         width: 100%;
     }
     #cardDerecha{
         margin: 0;
+    }
+    #cardPopular{
+        width: 100%;
     }
     #descriptionButton{
         margin: 0 15px 60px 15px;
@@ -1027,7 +1152,9 @@ select:not(.placeholder) {
     }
 
 
-
+    #PriceCards, #cardIzquierda, #priceCardPopular, #cardDerecha{
+        width: 95%;
+    }
 
 
 
