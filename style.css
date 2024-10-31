@@ -914,7 +914,6 @@ select:not(.placeholder) {
 
 
 /* BANNER RECTANGULAR */
-
 #bannerRectangular{
     display: flex;
     flex-direction: column;
@@ -944,6 +943,110 @@ select:not(.placeholder) {
 
 
 
+
+
+
+
+
+
+/* TESTIMONIALES SECTION */
+#testimonialesSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+    width: 100%;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 30px;
+}
+
+.tab-button {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #F3F7F9;
+    color: #009DFF;
+    border: none;
+    border-radius: 6px 6px 0 0;
+    margin-right: 2px;
+    padding: 10px 0;
+    width: 210px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #C4E8FF;
+    color: #009DFF;
+    border-radius: 6px 6px 0 0;
+    margin-right: 2px;
+    padding: 10px 0;
+    width: 210px;
+}
+
+.tab-button.active {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #009DFF;
+    color: white;
+    border-radius: 6px 6px 0 0;
+    margin-right: 2px;
+    padding: 10px 0;
+    width: 210px;
+
+}
+.lineaTestimoniales{
+    width: 90%;
+    max-width: 1248px;
+    margin: auto;
+    border: 1px solid #EEEEEE;
+
+}
+
+#testimonialesContent{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1248px;
+    margin-top: 15px;
+    
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    width: 90%;
+    max-width: 1248px;
+}
+.cardTestimonio{
+    border: 1px solid #EEEEEE;
+    border-radius: 6px;
+    margin-top: 15px;
+    padding: 30px 45px;
+    height: 100%;
+}
+#superiorTestimonial{
+    margin-bottom: 20px;
+}
+#imagenTestimonial{
+    width: 84px;
+}
+#cargoTestimonial{
+    font-size: 14px;
+    font-style: italic;
+}
 
 
 
@@ -1063,6 +1166,62 @@ select:not(.placeholder) {
 
 
 
+
+@media(max-width: 653px){
+    .tituloSeccion{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #heroBanner{
+        width: 100%;
+        height: 100%;
+        background-image: url('imagenes/heroBannerMobile.jpg');
+        background-size: cover;
+        padding: 30px 15px;
+    }
+    #contenedorHero{
+        display: flex;
+        flex-direction: column;
+    }
+    #heroBannerIzquierda{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #formHeroBanner{
+        width: 100%;
+        height: auto;
+    }
+
+    #cardIzquierda{
+        margin-top: 0;
+    }
+
+    .tab-content{
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 570px){
     .tituloSeccion{
         font-size: 24px;
@@ -1136,35 +1295,6 @@ select:not(.placeholder) {
 
 
 
-@media(max-width: 653px){
-    .tituloSeccion{
-        width: 90%;
-        margin: 0 auto;
-    }
-    #heroBanner{
-        width: 100%;
-        height: 100%;
-        background-image: url('imagenes/heroBannerMobile.jpg');
-        background-size: cover;
-        padding: 30px 15px;
-    }
-    #contenedorHero{
-        display: flex;
-        flex-direction: column;
-    }
-    #heroBannerIzquierda{
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    #formHeroBanner{
-        width: 100%;
-        height: auto;
-    }
-
-    #cardIzquierda{
-        margin-top: 0;
-    }
-}
 
 
 

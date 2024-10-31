@@ -103,4 +103,25 @@ function contacto(){
 
 
 
+// TESTIMONIALES SECTION
 
+function openTab(event, tabName) {
+    // Oculta todos los contenidos de las pestañas
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach((tab) => {
+        tab.style.display = 'none';
+    });
+  
+    // Elimina la clase 'active' de todas las pestañas
+    const tabButtons = document.querySelectorAll('.tab-button');
+    tabButtons.forEach((button) => {
+        button.classList.remove('active');
+    });
+  
+    // Muestra el contenido de la pestaña seleccionada
+    document.getElementById(tabName).style.display = 'flex';
+  
+    // Agrega la clase 'active' a la pestaña seleccionada
+    event.currentTarget.classList.add('active');
+  }
+  
