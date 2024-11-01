@@ -158,3 +158,37 @@ function openTab(event, tabName) {
     event.currentTarget.classList.add('active');
   }
   
+
+
+
+
+
+
+
+
+
+// FAQ's SECTION
+
+/* function toggleAccordion(button) {
+    const item = button.parentElement;
+    item.classList.toggle("active");
+  }
+  
+   */
+
+  function toggleAccordion(button) {
+    // Selecciona todos los elementos de acordeón
+    const allItems = document.querySelectorAll('.accordion-item');
+  
+    // Cierra todos los otros acordeones
+    allItems.forEach(item => {
+      if (item !== button.parentElement) {
+        item.classList.remove('active');
+      }
+    });
+  
+    // Alterna el acordeón seleccionado
+    const item = button.parentElement;
+    item.classList.toggle('active');
+  }
+  

@@ -1117,6 +1117,105 @@ select:not(.placeholder) {
 
 
 
+
+/* FAQ'S SECTION */
+
+#faqsSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 1248px;
+}
+.accordion {
+    width: 90%;
+    max-width: 1123px;
+    border-radius: 8px;
+/*     overflow: hidden; */
+    margin: 30px 0;
+}
+  
+.accordion-item {
+    margin-bottom: 20px;
+    border: 1px solid #EEEEEE;
+    border-radius: 8px;
+}
+  
+.accordion-button {
+    width: 100%;
+    background-color: white;
+    color: #37465A;
+    padding: 30px;
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    transition: background-color 0.3s ease;
+    
+}
+  
+.accordion-item:hover {
+    border: 1px solid #009DFF;
+    border-radius: 8px;
+}
+
+.fa-caret-right{
+    font-size: 22px;
+    color: #009DFF;
+}
+.arrow {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+  
+.accordion-content {
+    display: none;
+    padding: 0px 30px 30px 30px;
+}
+  
+.accordion-item.active .accordion-content {
+    display: block;
+}
+  
+.accordion-item.active .arrow {
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ALIADOS SECTION */
 #aliadosSection{
     background-color: #F3F7F9;
@@ -1159,6 +1258,17 @@ select:not(.placeholder) {
 #imagenAliado{
     width: 120px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1440,6 +1550,10 @@ select:not(.placeholder) {
     }
     #tituloBannerRectangular{
         font-size: 24px;
+    }
+
+    .fa-caret-right{
+        font-size: 20px;
     }
 }
 
