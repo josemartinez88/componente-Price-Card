@@ -863,6 +863,7 @@ select:not(.placeholder) {
 /* SERVICIOS CARD */
 #txtFiltrarPor{
     margin-top: 30px;
+    font-weight: 700;
 }
 #filtrosIzquierda, #filtrosDerecha{
     display: flex;
@@ -883,7 +884,7 @@ select:not(.placeholder) {
 }
 .filters {
     display: flex;
-    margin: 15px 0 -15px 0;
+    margin: 10px 0 -15px 0;
 }
 .hidden {
     display: none;
@@ -1084,6 +1085,98 @@ select:not(.placeholder) {
 
 
 
+/* BLOG SECTION */
+#blogSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 60px;
+    width: 90%;
+    max-width: 1248px;
+}
+#contenidoBlogSection{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-right: 45px;
+}
+
+#imagenBlog{
+    width: 400px;
+}
+.textBlog{
+    margin: 0px 0 15px 0;
+}
+
+
+
+
+
+
+
+
+
+/* ALIADOS SECTION */
+#aliadosSection{
+    background-color: #F3F7F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+}
+#contenidoAliadosSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 60px 0;
+    width: 100%;
+    max-width: 1248px;
+}
+#textoSecciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    width: 90%;
+}
+#logosAliados{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    width: 95%;
+    margin-top: 30px;
+}
+#imagenAliado{
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1138,6 +1231,11 @@ select:not(.placeholder) {
         margin: 0;
         width: 100%;
         padding: 45px 15px;
+    }
+
+    #logosAliados{
+        gap: 80px;
+        width: 90%;
     }
 }
 
@@ -1206,6 +1304,20 @@ select:not(.placeholder) {
         margin-bottom: 20px;
     }
 
+
+    #blogSection{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    #contenidoBlogSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
 }
 
 
@@ -1426,7 +1538,24 @@ select:not(.placeholder) {
         width: 100%;
     }
 
+
+    #imagenBlog{
+        width: 95%;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
