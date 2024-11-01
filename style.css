@@ -137,6 +137,7 @@ html, body{
 .buttonSizeM{
     font-size: 14px;
     font-weight: 700;
+    margin-top: 15px;
 }
 .fa-arrow-right-long{
     margin-left: 5px;
@@ -860,6 +861,9 @@ select:not(.placeholder) {
 
 
 /* SERVICIOS CARD */
+#txtFiltrarPor{
+    margin-top: 30px;
+}
 #filtrosIzquierda, #filtrosDerecha{
     display: flex;
     gap: 30px;
@@ -879,7 +883,7 @@ select:not(.placeholder) {
 }
 .filters {
     display: flex;
-    margin: 45px 0 -15px 0;
+    margin: 15px 0 -15px 0;
 }
 .hidden {
     display: none;
