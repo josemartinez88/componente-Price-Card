@@ -391,6 +391,7 @@ h6{
 
 #navegador{
     width: 100%;
+    
 }
 
 #header{
@@ -402,6 +403,7 @@ h6{
     padding: 20px 60px;
     border-bottom: 1px solid #EEEEEE;
 }
+
 a{
     text-decoration: none;
     color:#37465A;
@@ -820,6 +822,11 @@ select{
     background-size: 10px; /* Tamaño del icono */
     padding-right: 10px;
 }
+#desplegableSelect{
+    background-color: red;
+    color: #333;
+    padding: 8px;  
+}
 
 input::placeholder{
     color: #A4A4A4;
@@ -853,6 +860,13 @@ select:not(.placeholder) {
 
 
 /* SERVICIOS CARD */
+#filtrosIzquierda, #filtrosDerecha{
+    display: flex;
+    gap: 30px;
+}
+#filtrosIzquierda{
+    margin-right: 30px;
+}
 #serviciosSection{
     display: flex;
     flex-direction: column;
@@ -863,6 +877,14 @@ select:not(.placeholder) {
     max-width: 808px;
     text-align: center;
 }
+.filters {
+    display: flex;
+    margin: 45px 0 -15px 0;
+}
+.hidden {
+    display: none;
+}
+
 #rowServiciosCard{
     display: flex;
     flex-direction: row;
@@ -879,7 +901,7 @@ select:not(.placeholder) {
     border-radius: 6px;
     padding: 30px 30px 45px 30px;
     width: 394px;
-    display: flex; 
+/*     display: flex;  quite este para que funcionen los filtros*/
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
@@ -902,6 +924,12 @@ select:not(.placeholder) {
     width: 40px;
     height: 40px;
 }
+
+
+
+
+
+
 
 
 
@@ -1158,6 +1186,22 @@ select:not(.placeholder) {
     #tituloBannerRectangular{
         font-size: 28px;
     }
+
+    
+    .filters{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 70%;
+    }
+    #filtrosIzquierda, #filtrosDerecha{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        line-height: 0.3;
+        margin-bottom: 20px;
+    }
+
 }
 
 
@@ -1403,4 +1447,10 @@ select:not(.placeholder) {
         padding-top: 15px;
     }
     
+    #rowServiciosCard{
+        width: 90%;
+    }
+    .filters{
+        width: 80%;
+    }
 }

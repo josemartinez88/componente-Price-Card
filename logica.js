@@ -102,6 +102,39 @@ function contacto(){
 
 
 
+// SERVICIOS CARD FILTROS:
+
+const filters = document.querySelectorAll('input[name="filter"]');
+const cards = document.querySelectorAll('.card');
+
+filters.forEach(filter => {
+    filter.addEventListener('change', () => {
+        const selectedValue = filter.value;
+
+        cards.forEach(card => {
+            if (selectedValue === 'todos' || card.classList.contains(selectedValue)) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // TESTIMONIALES SECTION
 
