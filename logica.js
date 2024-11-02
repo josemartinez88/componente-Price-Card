@@ -192,3 +192,37 @@ function openTab(event, tabName) {
     item.classList.toggle('active');
   }
   
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  // FOOTER
+
+function toggleAccordionFooter(header) {
+    if (window.innerWidth > 768) {
+        return; 
+    }
+
+    const content = header.nextElementSibling;
+    const arrow = header.querySelector('.arrowFooter');
+
+    if (content.style.display === "block") {
+        content.style.display = "none";
+        arrow.classList.remove('rotate'); 
+    } else {
+        content.style.display = "block";
+        arrow.classList.add('rotate');
+    }
+}
+
+

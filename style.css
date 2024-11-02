@@ -1216,6 +1216,7 @@ select:not(.placeholder) {
 
 
 
+
 /* ALIADOS SECTION */
 #aliadosSection{
     background-color: #F3F7F9;
@@ -1264,6 +1265,136 @@ select:not(.placeholder) {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #009DFF;
+    width: 100%;
+    padding: 60px 0 100px 0;
+}
+#cloudsFooter{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25%;
+    z-index: 1; /* Asegura que la imagen esté sobre otros elementos del footer */
+}
+#footerTotal{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5px;
+    width: 90%;
+    height: auto;
+    max-width: 1248px;
+
+}
+
+#logoFooter{
+    margin-top: 15px;
+}
+
+
+#contenidoDerechaFooter{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+#columnasFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+
+}
+
+.column {
+    margin: 5px 0;
+    color: white;
+}
+.alturaColumna{
+    height: 313px;
+}
+
+/* Estilos para el encabezado de las columnas */
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: default;
+}
+
+.accordion-header.disabled{
+    cursor: not-allowed;
+}
+
+.accordion-content-footer {
+    display: block; 
+    padding: 10px 0 10px 10px;
+}
+.itemContentFooter{
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+/* Flecha */
+.arrowFooter {
+    display: none;
+    transition: transform 0.3s ease;
+}
+
+.arrowFooter.rotate {
+    transform: rotate(90deg);
+}
+.fa-angle-right{
+    color: white;
+    font-size: 24px;
+}
+
+#datosFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: white;
+    gap: 30px;
+}
+#socialMediaFooter{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    color: white;
+}
+.fa-brands{
+    color: white;
+    font-size: 24px;
+}
 
 
 
@@ -1347,7 +1478,22 @@ select:not(.placeholder) {
         gap: 80px;
         width: 90%;
     }
+
+    .footer-content{
+        gap: 0;
+    }
+    .alturaColumna{
+        height: 401px;
+    }
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -1428,7 +1574,74 @@ select:not(.placeholder) {
         text-align: center;
         margin: 20px 0 0 0;
     }
+
+
+
+
+
+    /* FOOTER */
+    footer{
+        padding-top: 15px;
+    }
+    #footerTotal{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    .accordion-header {
+        cursor: pointer;
+        padding-left: 0;
+        width: 100%;
+    }
+    .accordion-content-footer {
+        display: none; /* Muestra el contenido en desktop */
+        padding: 30px 0 0 0;
+    }
+
+    
+    #contenidoDerechaFooter{
+        width: 100%;
+    }
+    .arrowFooter {
+        display: block;
+    }
+
+    #columnasFooter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    .alturaColumna{
+        height: auto;
+    }
+    .itemContentFooter{
+        margin-bottom: 45px;
+    }
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1469,6 +1682,14 @@ select:not(.placeholder) {
     .tab-content{
         flex-direction: column;
         gap: 15px;
+    }
+
+
+    #datosFooter{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }
 
